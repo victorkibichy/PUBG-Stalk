@@ -24,7 +24,7 @@ class PlayerStatsViewModel: ObservableObject {
         self.isLoading = true
         self.errorMessage = nil
         
-        let urlString = "https://api.pubg.com/shards/pc/players?filter[playerNames]=\(username)" // Adjust the URL based on the API
+        let urlString = "https://api.pubg.com/shards/pc/players?filter[playerNames]=\(username)" 
         guard let url = URL(string: urlString) else {
             self.isLoading = false
             self.errorMessage = "Invalid URL."

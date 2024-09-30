@@ -15,6 +15,8 @@ struct PlayerStatsView: View {
         NavigationView {
             VStack {
                 // Search bar to enter username
+                
+                Spacer ()
                 HStack {
                     TextField("Enter Player Username", text: $username)
                         .padding()
