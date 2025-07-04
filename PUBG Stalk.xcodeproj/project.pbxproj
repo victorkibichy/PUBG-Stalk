@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		050082EB2CA6B50D0022107A /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050082EA2CA6B50D0022107A /* PlayerStats.swift */; };
 		050082EE2CA6B5480022107A /* PlayerStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050082ED2CA6B5480022107A /* PlayerStatsViewModel.swift */; };
-		050082F02CA6B5AC0022107A /* PUBGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050082EF2CA6B5AC0022107A /* PUBGService.swift */; };
 		050082F32CA6B6590022107A /* PlayerStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050082F22CA6B6590022107A /* PlayerStatsView.swift */; };
 		059431382CA3DF0A00C91A12 /* PUBG_StalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059431372CA3DF0A00C91A12 /* PUBG_StalkApp.swift */; };
 		0594313A2CA3DF0A00C91A12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059431392CA3DF0A00C91A12 /* ContentView.swift */; };
@@ -20,6 +19,7 @@
 		0594314F2CA3DF0D00C91A12 /* PUBG_StalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0594314E2CA3DF0D00C91A12 /* PUBG_StalkTests.swift */; };
 		059431592CA3DF0D00C91A12 /* PUBG_StalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059431582CA3DF0D00C91A12 /* PUBG_StalkUITests.swift */; };
 		0594315B2CA3DF0D00C91A12 /* PUBG_StalkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0594315A2CA3DF0D00C91A12 /* PUBG_StalkUITestsLaunchTests.swift */; };
+		23DFC6902E155D400072E320 /* PUBGPlayerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFC68F2E155D400072E320 /* PUBGPlayerResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 /* Begin PBXFileReference section */
 		050082EA2CA6B50D0022107A /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
 		050082ED2CA6B5480022107A /* PlayerStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsViewModel.swift; sourceTree = "<group>"; };
-		050082EF2CA6B5AC0022107A /* PUBGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUBGService.swift; sourceTree = "<group>"; };
 		050082F22CA6B6590022107A /* PlayerStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsView.swift; sourceTree = "<group>"; };
 		059431342CA3DF0A00C91A12 /* PUBG Stalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PUBG Stalk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		059431372CA3DF0A00C91A12 /* PUBG_StalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUBG_StalkApp.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		059431542CA3DF0D00C91A12 /* PUBG StalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PUBG StalkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		059431582CA3DF0D00C91A12 /* PUBG_StalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUBG_StalkUITests.swift; sourceTree = "<group>"; };
 		0594315A2CA3DF0D00C91A12 /* PUBG_StalkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUBG_StalkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23DFC68F2E155D400072E320 /* PUBGPlayerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUBGPlayerResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,7 @@
 		050082E92CA6B4EB0022107A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				23DFC68F2E155D400072E320 /* PUBGPlayerResponse.swift */,
 				050082EA2CA6B50D0022107A /* PlayerStats.swift */,
 			);
 			path = Models;
@@ -131,6 +132,7 @@
 		059431362CA3DF0A00C91A12 /* PUBG Stalk */ = {
 			isa = PBXGroup;
 			children = (
+				23DFC6922E17BA970072E320 /* PUBGService */,
 				050082F12CA6B5D30022107A /* Views */,
 				050082EC2CA6B5270022107A /* ViewModels */,
 				050082E92CA6B4EB0022107A /* Models */,
@@ -141,7 +143,6 @@
 				059431452CA3DF0C00C91A12 /* Info.plist */,
 				059431422CA3DF0C00C91A12 /* PUBG_Stalk.xcdatamodeld */,
 				0594313D2CA3DF0C00C91A12 /* Preview Content */,
-				050082EF2CA6B5AC0022107A /* PUBGService.swift */,
 			);
 			path = "PUBG Stalk";
 			sourceTree = "<group>";
@@ -169,6 +170,13 @@
 				0594315A2CA3DF0D00C91A12 /* PUBG_StalkUITestsLaunchTests.swift */,
 			);
 			path = "PUBG StalkUITests";
+			sourceTree = "<group>";
+		};
+		23DFC6922E17BA970072E320 /* PUBGService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PUBGService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +314,8 @@
 				059431382CA3DF0A00C91A12 /* PUBG_StalkApp.swift in Sources */,
 				050082EE2CA6B5480022107A /* PlayerStatsViewModel.swift in Sources */,
 				059431442CA3DF0C00C91A12 /* PUBG_Stalk.xcdatamodeld in Sources */,
+				23DFC6902E155D400072E320 /* PUBGPlayerResponse.swift in Sources */,
 				050082EB2CA6B50D0022107A /* PlayerStats.swift in Sources */,
-				050082F02CA6B5AC0022107A /* PUBGService.swift in Sources */,
 				050082F32CA6B6590022107A /* PlayerStatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

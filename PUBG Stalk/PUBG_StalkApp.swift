@@ -13,7 +13,7 @@ struct PUBG_StalkApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlayerStatsView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
